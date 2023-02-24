@@ -2,6 +2,11 @@
 
 # Instructions
 
+## Clone the project
+```bash
+$ git clone https://github.com/maximeoger/tennis-player-stats.git
+```
+
 This is a project about using the tennis player api from a famous sport company to compare tennis players stats.
 The app does not use docker for now so please make sure to have the following dependencies installed:
 
