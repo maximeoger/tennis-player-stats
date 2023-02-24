@@ -1,0 +1,40 @@
+# Tennis Player Stats
+
+# Instructions
+
+This is a project about using the tennis player api from a famous sport company to compare tennis players stats.
+The app does not use docker for now so please make sure to have the following dependencies installed:
+
+### Node v19.4.0
+    
+### PM2
+PM2 is a deamon process manager [read more here](https://pm2.keymetrics.io/docs/usage/quick-start/)
+```bash
+$ npm install pm2@latest -g
+# or
+$ yarn global add pm2
+```
+### Makefile
+```bash
+# Using homebrew
+$ brew install make
+
+# On Ubuntu
+$ sudo apt update
+$ sudo apt install make
+```
+
+## How to run the project on local
+
+Now that all the dependencies are installed on your local computer, please run the following command :
+```bash
+# Install the dependencies in front and server packages
+$ make install
+# Launch the project
+$ make start
+```
+
+## How to stop the project
+```bash
+$ make stop
+```
