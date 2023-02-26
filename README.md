@@ -2,7 +2,7 @@
 
 # Instructions
 
-## Clone the project
+##1. Clone the project
 ```bash
 $ git clone https://github.com/maximeoger/tennis-player-stats.git
 ```
@@ -29,7 +29,11 @@ $ sudo apt update
 $ sudo apt install make
 ```
 
-## How to run the project on local
+##2. Before running the project
+
+Please make sure to rename `.env.example` files located in both **server/** and **front/** directories to `.env`
+
+##3. How to run the project on local
 
 Now that all the dependencies are installed on your local computer, please run the following command :
 ```bash
