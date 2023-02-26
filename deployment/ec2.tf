@@ -30,7 +30,7 @@ resource "aws_instance" "node_api_instance_nginx" {
                 # Install server dependencies and pm2 to manage process
                 cd server && npm install
                 npm install -g pm2
-                touch .env && echo "origin_url=http://tennis-player-stats-bucket.s3-website.eu-west-3.amazonaws.com" > .env
+                touch .env && echo "origin_url=http://tennis-player-stats.s3-website.eu-west-3.amazonaws.com" > .env
 
                 # Start the server and show logs
                 npx pm2 start yarn --interpreter bash --name api -- start
