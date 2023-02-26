@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { ChevronRight, Clock } from "../../../common/Icons";
 import { formatHeight, formatWeight, formatAge } from "../../utils";
 
@@ -62,6 +63,29 @@ const PlayerCard = ({ player }) => {
       </div>
     </div>
   );
+};
+
+PlayerCard.propTypes = {
+  player: PropTypes.shape({
+    country: PropTypes.shape({
+      code: PropTypes.string,
+      picture: PropTypes.string,
+    }),
+    data: PropTypes.shape({
+      age : PropTypes.number,
+      height : PropTypes.number,
+      last : PropTypes.arrayOf(PropTypes.number),
+      points : PropTypes.number,
+      rank : PropTypes.number,
+      weight : PropTypes.number
+    }),
+    firstname : PropTypes.string,
+    id : PropTypes.number,
+    lastname : PropTypes.string,
+    picture : PropTypes.string,
+    sex : PropTypes.string,
+    shortname : PropTypes.string
+  })
 };
 
 export default PlayerCard;
