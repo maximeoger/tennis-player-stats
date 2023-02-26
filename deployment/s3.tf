@@ -1,6 +1,6 @@
 
 variable "bucket_name" {
-  default = "tennis-player-stats-bucket"
+  default = "tennis-player-stats"
 }
 
 resource "aws_s3_bucket" "react_app" {
@@ -48,13 +48,3 @@ resource "aws_s3_bucket_website_configuration" "react_app" {
     suffix = "index.html"
   }
 }
-
-/*
-resource "aws_s3_object" "index_page" {
-  bucket = aws_s3_bucket.react_app.id
-  key = "index.html"
-  content_type = "text/html; chartset=UTF-8"
-  source = "index.html"
-  etag = filemd5("index.html")
-}
-*/
