@@ -44,7 +44,6 @@ resource "aws_route_table" "prod_route_table" {
     gateway_id = aws_internet_gateway.gw.id
   }
 
-  # route optionnele, pour gérer le traffic IPV6
   route {
     ipv6_cidr_block = "::/0"
     gateway_id      = aws_internet_gateway.gw.id
