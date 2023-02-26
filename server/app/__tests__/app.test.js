@@ -40,21 +40,12 @@ describe('Player routes', () => {
 	});
 
 	test('GET /players should return a 404 if url does not exists', async () => {
-		moxios.wait(() => {
-			const request = moxios.requests.mostRecent();
-			request.respondWith({
-				status: 404,
-				response: {
-					error: new Error('AxiosError: Request failed with status code 404')
-				}
-			});
-		});
-
+		stubRequest(HTTP_STATUS_CODES.NOT_FOUND_404, { error: true, message: 'not found' });
 		try {
 			await supertest(server).get('/api/players/99');
 		} catch (err) {
 			expect(err.status).toBe(HTTP_STATUS_CODES.NOT_FOUND_404);
-		};
+		}
 	});
 });
 

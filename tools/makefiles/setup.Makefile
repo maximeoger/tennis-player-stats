@@ -10,6 +10,12 @@ _install.front:
 _install.server:
 	yarn --cwd server install
 
+_test.front:
+	yarn --cwd front test --watchAll=false
+
+_test.server:
+	yarn --cwd server test
+
 _log:
 	npx pm2 log
 

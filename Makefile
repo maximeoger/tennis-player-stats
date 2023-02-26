@@ -16,6 +16,10 @@ restart:
 	@make _delete_all
 	@make start
 
+test:
+	@make _test.front
+	@make _test.server
+
 build-infra:
 	@make _build.infra
 
