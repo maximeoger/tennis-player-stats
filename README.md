@@ -1,5 +1,8 @@
 # Tennis Player Stats
 
+The project is accessible here : 
+http://tennis-player-stats.s3-website.eu-west-3.amazonaws.com/
+
 # Instructions
 
 ## 1. Clone the project
