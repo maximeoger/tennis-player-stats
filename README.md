@@ -47,3 +47,8 @@ $ make start
 ```bash
 $ make stop
 ```
+
+## How to run the tests from both front and server packages
+```bash
+$ make test
+```
