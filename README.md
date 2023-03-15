@@ -1,8 +1,5 @@
 # Tennis Player Stats
 
-The project is accessible here : 
-http://tennis-player-stats.s3-website.eu-west-3.amazonaws.com/
-
 # Instructions
 
 ## 1. Clone the project
@@ -10,7 +7,7 @@ http://tennis-player-stats.s3-website.eu-west-3.amazonaws.com/
 $ git clone https://github.com/maximeoger/tennis-player-stats.git
 ```
 
-This is a project about using the tennis player api from a famous sport company to compare tennis players stats.
+This is a project about using the tennis player api to compare tennis players stats.
 The app does not use docker for now so please make sure to have the following dependencies installed:
 
 ### Node v19.4.0
